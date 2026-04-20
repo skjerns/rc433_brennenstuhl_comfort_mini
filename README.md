@@ -42,7 +42,7 @@ make
 sudo ./record socket1_on
 ```
 
-This records raw 433 MHz pulses to `socket1_on.rf`. Press the desired button on the remote and hold it for a few seconds. Recording stops on Enter, Ctrl+C, or after the timeout (default 5 seconds).
+This records raw 433 MHz pulses to `socket1_on.rf`. Press the desired button on the remote and hold it for a second. Recording stops on Enter, Ctrl+C, or after the timeout (default 5 seconds).
 
 To set a custom timeout:
 
