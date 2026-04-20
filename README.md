@@ -28,13 +28,13 @@ cd WiringPi
 ./build
 ```
 
-## Build
+## Usage
+
+build the binaries using
 
 ```bash
 make
 ```
-
-## Usage
 
 ### 1. Record signals from the remote
 
@@ -42,7 +42,7 @@ make
 sudo ./record socket1_on
 ```
 
-This records raw 433 MHz pulses to `socket1_on.rf`. Press the desired button on the remote and hold it for a few seconds. Recording stops on Enter, Ctrl+C, or after the timeout (default 5 seconds).
+This records raw 433 MHz pulses to `socket1_on.rf`. Press the desired button on the remote and hold it for a second. Recording stops on Enter, Ctrl+C, or after the timeout (default 5 seconds).
 
 To set a custom timeout:
 
@@ -54,9 +54,13 @@ Record each button you want to control:
 
 ```bash
 sudo ./record socket1_on
+# press button for ~1 second and then enter to stop recording
 sudo ./record socket1_off
+# press button for ~1 second and then enter to stop recording
 sudo ./record socket2_on
+# press button for ~1 second and then enter to stop recording
 sudo ./record socket2_off
+# press button for ~1 second and then enter to stop recording
 # etc.
 ```
 
