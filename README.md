@@ -28,13 +28,13 @@ cd WiringPi
 ./build
 ```
 
-## Build
+## Usage
+
+build the binaries using
 
 ```bash
 make
 ```
-
-## Usage
 
 ### 1. Record signals from the remote
 
@@ -54,9 +54,13 @@ Record each button you want to control:
 
 ```bash
 sudo ./record socket1_on
+# press button for ~1 second and then enter to stop recording
 sudo ./record socket1_off
+# press button for ~1 second and then enter to stop recording
 sudo ./record socket2_on
+# press button for ~1 second and then enter to stop recording
 sudo ./record socket2_off
+# press button for ~1 second and then enter to stop recording
 # etc.
 ```
 
